@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo</title>
+
+  <style>
+    .botao{
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      margin:0 auto;
+    }
+  </style>
+  
+        <!--link para incorporar jquery-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--link para incorporar java script-->
+  <script src="js/scripts.js"> </script>
+  
+  <script type="text/javascript">
+  $(document).ready(function(){
+      $('.botao').click(function(){
+  $(this).css('background', 'green');
+  });
+  });
+  </script>
+</head>
+<body>
+  <h1 style="text-align:center;"> clique no botão para alterar a cor dele</h1>
+  <div class="botao"></div>
+  
+
+</body>
+</html>
